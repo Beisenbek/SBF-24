@@ -6,6 +6,7 @@ import kz.kbtu.backend.model.D3ColorPrinter;
 import kz.kbtu.backend.model.IPrintable;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,4 +22,5 @@ public class Config {
             return new ColorPrinter();
        return new D3ColorPrinter();
     }
+
 }
